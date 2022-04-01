@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="OFDL EV3Husky">
+	<PolyGroup Name="OFDL_EV3Husky" DisplayName="EV3 Huskylens - OFDL Dev." DisplayNamePrefix="EV3Husky">
+      <Parameter Name="Port" DisplayName="Port" ></Parameter>
+      <Parameter Name="X" DisplayName="X Center of Block"></Parameter>
+      <Parameter Name="Y" DisplayName="Y Center of Block"></Parameter>
+      <Parameter Name="W" DisplayName="Width of Block"></Parameter>
+      <Parameter Name="H" DisplayName="Height of Block"></Parameter>
+      <Parameter Name="ID" DisplayName="ID of Block"></Parameter>
+      <Parameter Name="State" DisplayName="Connection status"></Parameter>
+      <Parameter Name="A_xO" DisplayName="X Origin of Arrow"></Parameter>
+      <Parameter Name="A_yO" DisplayName="Y Origin of Arrow"></Parameter>
+      <Parameter Name="A_xT" DisplayName="X Target of Arrow"></Parameter>
+      <Parameter Name="A_yT" DisplayName="Y Target of Arrow"></Parameter>
+	  
+	  <Block Mode="HUSK_ReadAllBlock" DisplayName="Read Block"></Block>
+	  <Block Mode="HUSK_ReadAllArrow" DisplayName="Read Arrow"></Block>
+	  <!--<Block Mode="ReadIDOnly" DisplayName="Read ID only"></Block>-->
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>

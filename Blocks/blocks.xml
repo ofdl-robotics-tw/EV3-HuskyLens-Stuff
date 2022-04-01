@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="OFDL EV3Husky" ModuleVersion="1.0 (By OFDL Dev.)">
+	<PolyGroup Name="OFDL_EV3Husky" BlockFamily="Sensor">
+      <Parameter Name="Port" CompilerDirectives="OneInputPort" Direction="Input" DefaultValue="1.3" />
+	  <Parameter Name="X" Identification="builtin://Identification_x.png" DataType="Single" Direction="Output"/>
+	  <Parameter Name="Y" Identification="builtin://Identification_y.png" DataType="Single" Direction="Output" />
+      <Parameter Name="W" Identification="builtin://Identification_Width.png" DataType="Single" Direction="Output" />
+      <Parameter Name="H" Identification="builtin://Identification_Height.png" DataType="Single" Direction="Output" />
+	  <Parameter Name="A_xO" Identification="builtin://Identification_x1.png" DataType="Single" Direction="Output"/>
+	  <Parameter Name="A_yO" Identification="builtin://Identification_y1.png" DataType="Single" Direction="Output" />
+      <Parameter Name="A_xT" Identification="builtin://Identification_x2.png" DataType="Single" Direction="Output" />
+      <Parameter Name="A_yT" Identification="builtin://Identification_y2.png" DataType="Single" Direction="Output" />
+      <Parameter Name="ID" Identification="builtin://Identification_Count.png" DataType="Single" Direction="Output" />
+      <Parameter Name="State" Identification="builtin://Identification_DatalogRate.png" DataType="Single" Direction="Output" />
+      <Hardware>
+        <NXTPlotColor>#ffff3132</NXTPlotColor>
+        <EV3PlotColor>#ff785028</EV3PlotColor>
+        <EV3AutoID>84</EV3AutoID>
+        <Direction>Input</Direction>
+        <DefaultPort>1.3</DefaultPort>
+      </Hardware>
+      <Block>
+        <Mode>HUSK_ReadAllBlock</Mode>
+        <Reference Type="VILib" Name="OFDL_EV3Husky_ReadAllBlock.vix" />
+        <ParameterReference Name="Port" />
+		<ParameterReference Name="State" />
+		<ParameterReference Name="ID" />
+        <ParameterReference Name="X" />
+        <ParameterReference Name="Y" />
+        <ParameterReference Name="W" />
+        <ParameterReference Name="H" />
+        <PaletteInfo Weight="0.5" />
+        <Flags>PBROnly</Flags>
+      </Block>
+	  <Block>
+        <Mode>HUSK_ReadAllArrow</Mode>
+        <Reference Type="VILib" Name="OFDL_EV3Husky_ReadAllArrow.vix" />
+        <ParameterReference Name="Port" />
+		<ParameterReference Name="State" />
+		<ParameterReference Name="ID" />
+        <ParameterReference Name="A_xO" />
+        <ParameterReference Name="A_yO" />
+        <ParameterReference Name="A_xT" />
+        <ParameterReference Name="A_yT" />
+        <Flags>PBROnly</Flags>
+      </Block>	  
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
