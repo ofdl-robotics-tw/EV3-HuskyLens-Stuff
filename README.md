@@ -5,6 +5,8 @@ An adapter allow HuskyLens communication with LEGO Mindstroms EV3 (support SPIKE
 The EV3/SPIKE/RI using LEGO UART protocol to communicate with sensors, and HuskyLens provide I2C and UART to transmit data, so we use an Arduino as an "Translator", to convert HuskyLens data to LEGO UART format.
 
 ## Hardware
+![](https://github.com/ofdl-robotics-tw/EV3-HuskyLens-Stuff/blob/main/Adapter%20PCB/EV3HUSKY_PCB_rev1.PNG?raw=true)
+
 We use an Arduino Pro Mini, and a simple PCB to connect HuskyLens pins and EV3 ports.
 * Arduino Pro Mini 5V, 16 MHz with baud 115200 for EV3
 * Arduino Pro Mini 3v3, 8 Mhz with baud 57600 for SPIKE/RI
