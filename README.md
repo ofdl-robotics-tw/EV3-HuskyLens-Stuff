@@ -13,6 +13,8 @@ We use an Arduino Pro Mini, and a simple PCB to connect HuskyLens pins and EV3 p
 * HuskyLens and Arduino communicate with baud 9600 (swuart)
 
 Using avrdude or XLoader to upload firmware hex file to your Arduino Pro Mini, if you using ICSP to program your arduino, you can choose "_with_Bootloader" one hex file to programming to keep the bootloader there.
+For XLoader users: You can add this line into device.txt to upload bin file to Pro Mini. (Tested, works fine.)
+"Pro mini(ATmega328);m328p;stk500;57600;"
 
 ## Software
 Go to release page to download EV3-G blocks, the block will return following info:
